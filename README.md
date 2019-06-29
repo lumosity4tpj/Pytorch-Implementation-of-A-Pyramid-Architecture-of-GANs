@@ -4,7 +4,7 @@
 
 This is a pytorch implementation for reproducing PAGAN results in the paper [Learning Face Age Progression: A Pyramid Architecture of GANs](https://arxiv.org/pdf/1711.10352v1.pdf).
 
-**Please note that this is not the official code and The code may still have errors for the results did not reach the original results.**:weary:
+**Please note that this is not the official code and The code may still have errors for the results did not reach the original results in the paper.**:weary:
 
 ### Requirements
 
@@ -81,11 +81,11 @@ Here are some visualization results. And age estimation & face verification resu
   - age estimation & face verification results:
 
     |                                                   | age cluster1 | age cluster2 | age cluster3 |
-    | ------------------------------------------------- | ------------ | ------------ | ------------ |
-    | average estimate age                              | 42.1         | 50.7         | 61.7         |
-    | age accuracy(if estimate age in the age cluster ) | 33.1%        | 33.0%        | 90.2%        |
-    | average veriﬁcation conﬁdence(with age cluster 0) |              | 86.6         | 79.9         |
-    | veriﬁcation rate(FAR = 1e-5)                      |              | 97.8%        | 84.0%        |
+    | :-----------------------------------------------: | :----------: | :----------: | :----------: |
+    |               average estimate age                |     42.1     |     50.7     |     61.7     |
+    | age accuracy(if estimate age in the age cluster ) |    33.1%     |    33.0%     |    90.2%     |
+    | average veriﬁcation conﬁdence(with age cluster0)  |     91.5     |     86.6     |     79.9     |
+    |           veriﬁcation rate(FAR = 1e-5)            |    99.8%     |    97.8%     |    84.0%     |
 
 - test(FGnet):
 
@@ -113,7 +113,7 @@ Here are some visualization results. And age estimation & face verification resu
     | :-----------------------------------------------: | :----------: | :----------: | :----------: |
     |               average estimate age                |     37.6     |     48.4     |     51.1     |
     | age accuracy(if estimate age in the age cluster ) |    44.3%     |    42.7%     |    56.9%     |
-    | average veriﬁcation conﬁdence(with age cluster 0) |     92.3     |     87.7     |     87.7     |
+    | average veriﬁcation conﬁdence(with age cluster0)  |     92.3     |     87.7     |     87.7     |
     |           veriﬁcation rate(FAR = 1e-5)            |    99.7%     |    98.1%     |    97.2%     |
 
     
