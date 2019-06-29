@@ -2,11 +2,9 @@
 
 ------
 
-This is a pytorch implementation for reproducing PAGAN results in the paper [Learning Face Age Progression: A Pyramid Architecture of GANs](https://arxiv.org/pdf/1711.10352v1.pdf)<br>
+This is a pytorch implementation for reproducing PAGAN results in the paper [Learning Face Age Progression: A Pyramid Architecture of GANs](https://arxiv.org/pdf/1711.10352v1.pdf).
 
-Please note that this is not the official code and The code may still have errors for the results did not reach the original results.:weary:<br>
-
-<br>
+**Please note that this is not the official code and The code may still have errors for the results did not reach the original results.**:weary:
 
 ### Requirements
 
@@ -17,8 +15,6 @@ Please note that this is not the official code and The code may still have error
 - Visdom 0.1.8
 - Pillow 6.0
 
-<br>
-
 ### Dataset
 
 ------
@@ -28,8 +24,6 @@ Please note that this is not the official code and The code may still have error
 
 **Please pay attention to** splitting CACD_dataset to train_dataset & val_dataset. and after `make_label.py` , move dataset to the path like`data_train/young(or elder1,elder2,elder3,val,test)`.
 
-<br>
-
 ### Pretrained Models
 
 ------
@@ -38,8 +32,6 @@ You can download pretrained vgg-face models from (http://www.robots.ox.ac.uk/~al
 
 It will require about 1.1 GB of disk space.
 
-<br>
-
 ### Running Models
 
 ------
@@ -47,8 +39,6 @@ It will require about 1.1 GB of disk space.
 you can run the shell script `train.sh` and `test.sh`.
 
 **Please note that modifying the path in the `CONFIG`  when different age cluster.** 
-
-<br>
 
 ### Results
 
@@ -59,22 +49,14 @@ Here are some visualization results. And age estimation & face verification resu
 - train:
 
   - age_cluster_1:
-
     - original: ![](https://github.com/lumosity4tpj/PAGAN/blob/master/result_imgs/train_1_input.png)
     - generate: ![](https://github.com/lumosity4tpj/PAGAN/blob/master/result_imgs/train_1_fake.png)
-
   - age_cluster_2:
-
     - original: ![](https://github.com/lumosity4tpj/PAGAN/blob/master/result_imgs/train_2_input.png)
     - generate: ![](https://github.com/lumosity4tpj/PAGAN/blob/master/result_imgs/train_2_fake.png)
-
   - age_cluster_3:
-
     - original: ![](https://github.com/lumosity4tpj/PAGAN/blob/master/result_imgs/train_3_input.png)
-
     - generate: ![](https://github.com/lumosity4tpj/PAGAN/blob/master/result_imgs/train_3_fake.png)
-
-      
 
 - val(CACD):
 
@@ -100,12 +82,10 @@ Here are some visualization results. And age estimation & face verification resu
 
     |                                                   | age cluster1 | age cluster2 | age cluster3 |
     | ------------------------------------------------- | ------------ | ------------ | ------------ |
-    | average estimate age                              |              | 50.7         | 61.7         |
-    | age accuracy(if estimate age in the age cluster ) |              | 33.0%        | 90.2%        |
+    | average estimate age                              | 42.1         | 50.7         | 61.7         |
+    | age accuracy(if estimate age in the age cluster ) | 33.1%        | 33.0%        | 90.2%        |
     | average veriﬁcation conﬁdence(with age cluster 0) |              | 86.6         | 79.9         |
     | veriﬁcation rate(FAR = 1e-5)                      |              | 97.8%        | 84.0%        |
-
-    
 
 - test(FGnet):
 
