@@ -1,0 +1,7 @@
+TRAIN_AGE=3
+ELDER_DATAROOT=./data_train/elder3/
+MODEL_DIR=./model_crop_3
+TRAIN_IMG_DIR=./img/train_crop_3
+NETD_PTH=./model_crop_3/netD_epoch_49900.pth
+NETG_PTH=./model_crop_3/netG_epoch_49900.pth
+ENV=PAGAN_crop_3
